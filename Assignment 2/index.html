@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Currency Convert</title>
+		<style> 
+            body{
+                margin-left:20%;
+                padding-left:5%;
+                padding-bottom: 5%;
+                border:solid black 2px; 
+                width:50%;
+                padding-top:3%;
+                height: 95%;
+            }
+        </style>
+	</head>
+	<body onload="fortune()">
+		<h1>Part #1</h1>
+		<h2> Fortune Generator</h2>
+		<p id="fortune"></p>
+		<h1>Part #2</h1>
+		<h2> Currency Converter</h2>
+		
+		<form>
+			<input type="text" name="amount1" placeholder="Enter Amount..."/>
+			<select id="currency">
+				<option value="tk">TK</option>
+				<option value="dollar">Dollar</option>
+				<option value="euro">Euro</option>
+				<option value="pound">Pound</option>
+			</select>
+			<br>
+			<input type="text" name="amount2" placeholder="Enter Amount..."/>
+			<select id="currency1">
+				<option value="tk">TK</option>
+				<option value="dollar">Dollar</option>
+				<option value="euro">Euro</option>
+				<option value="pound">Pound</option>
+			</select>
+			<br>
+			<input type="button" value="Convert" onclick="convert()" />
+			<br><br>
+			<b><p id="eq"></p></b> 
+			<p id="dollar"></p>
+			<p id="euro"></p>
+			<p id="pound"></p>
+		</form>
+		
+		<h1>Part #3</h1>
+		<h2>Quiz Question</h2>
+		<form action="/action_page.php">
+			<p>1.Grand Central Terminal, Park Avenue, New York is the world's</p>
+			  <input type="radio" name="1" value="a">A. largest railway station<br>
+			  <input type="radio" name="1" value="b">B. highest railway station<br>
+			  <input type="radio" name="1" value="c">C. longest railway station<br>  
+			<p id="ans1" style="color:rad"></p>
+			<p>2.Entomology is the science that studies</p>
+			  <input type="radio" name="2" value="a"> A. Behavior of human beings<br>
+			  <input type="radio" name="2" value="b"> B. Insects<br>
+			  <input type="radio" name="2" value="c"> C. The origin and history of technical and scientific terms<br>  
+			  <p id="ans2" style="color:rad"></p>
+			<p>3.Eritrea, which became the 182nd member of the UN in 1993, is in the continent of</p>
+				 <input type="radio" name="3" value="a">A. Asia<br>
+				 <input type="radio" name="3" value="b">B. Africa<br>
+				 <input type="radio" name="3" value="c">C. Europe<br>  
+				<p id="ans3" style="color:rad"></p>
+			<p>4.Garampani sanctuary is located at</p>
+				<input type="radio" name="4" value="a"> A. Junagarh, Gujarat<br>
+				<input type="radio" name="4" value="b"> B. Diphu, Assam<br>
+				<input type="radio" name="4" value="c"> C. Kohima, Nagaland<br>  
+				<p id="ans4" style="color:rad"></p>
+			<p>5.For which of the following disciplines is Nobel Prize awarded?</p>
+				 <input type="radio" name="5" value="a">A. Physics and Chemistry<br>
+				 <input type="radio" name="5" value="b">B. Physiology or Medicine<br>
+				 <input type="radio" name="5" value="c">C. All of the above<br>  
+				<p id="ans5" style="color:rad"></p>
+			<h3 style="color:green" id="result"></h3>
+			  <input type="button" value="Submit" onclick="quizQuestion()" />
+		</form>
+		
+		
+		<script src="lab2.js" ></script>
+	</body>
+</html>
